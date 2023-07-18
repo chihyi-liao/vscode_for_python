@@ -1,5 +1,5 @@
 {
-    "python.envFile": "${workspaceFolder}/.vscode/.env",
+    "json.schemaDownload.enable": true,
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
@@ -15,5 +15,11 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         },
+    },
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": true,
+    "python.envFile": "${workspaceFolder}/.vscode/.env",
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}/.vscode/.env"
     }
 }
