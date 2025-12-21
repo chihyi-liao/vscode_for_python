@@ -11,4 +11,4 @@ python -m venv venv
 ```
 
 3. 將 .vscode 複製到專案資料夾下
-4. 安裝 yapf, flake8, isort 套件
+4. 安裝 yapf, flake8, isort, ruff 套件
