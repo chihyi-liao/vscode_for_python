@@ -1,0 +1,28 @@
+{
+    // 設定 python 程式碼格式化
+    "[python]": {
+        // Alt + Shift + F
+        // "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        // "editor.formatOnSave": true,
+        // "editor.codeActionsOnSave": {
+        //     "source.fixAll.ruff": "explicit",
+        //     "source.organizeImports":"explicit"
+        // }
+    },
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    // 執行 Run (F5, Ctrl F5) 指令的方式時會將參考的 env 檔的路徑加到 sys.path
+    "python.envFile": "${workspaceFolder}/.vscode/.env",
+
+    // terminal 執行 python 指令時會將加入模組路徑到 sys.path
+    // "terminal.integrated.env.linux": {
+    //     "PYTHONPATH": "${workspaceFolder}${/}src:${workspaceFolder}${/}tests"
+    // },
+    // "terminal.integrated.env.osx": {
+    //     "PYTHONPATH": "${workspaceFolder}${/}src:${workspaceFolder}${/}tests"
+    // },
+    // "terminal.integrated.env.windows": {
+    //     "PYTHONPATH": "${workspaceFolder}${/}src;${workspaceFolder}${/}tests"
+    // }
+}
