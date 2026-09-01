@@ -1,0 +1,62 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pytest.ini_options]
+addopts = "-ra -v"
+
+[tool.pdm]
+distribution = false
+
+[project]
+name = "vscode_for_python"
+dynamic = ["version"]
+url = "https://github.com/chihyi-liao/vscode_for_python"
+description = "description"
+authors = [
+    {name = "chihyi liao",email = "chihyi.liao@gmail.com"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Chinese (Traditional)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "VERSION"
+
+[tool.pdm.build]
+package-dir= "src"
+
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E402",  # module level import not at top of file
+    "UP046"  # non-pep695-generic-class
+]
+
